@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sukhdev Rajput Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      overflow-x: hidden;
+      margin: 0;
+      background-color: #0d1b2a;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    header {
+      margin-right: 0;
+    }
+
+    .navbar {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      background-color: rgba(14, 14, 32, 0.4);
+    }
+
+    .right ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul li {
+      margin-right: 20px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .navbar button {
+      background-color: #ffd400;
+      color: black;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .navbar button:hover {
+      background-color: #ffba08;
+      color: black;
+      text-decoration: underline;
+    }
+
+    .aboutmy {
+      margin-top: 100px;
+      margin-left: 15%;
+      padding: 15px;
+    }
+
+    div span {
+      font-size: 3.1rem;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    #name {
+      color: #ffba08;
+    }
+
+    button {
+      color: black;
+      border: 1px;
+      border-radius: 25px;
+    }
+
+    #imageself {
+      height: 90%;
+      width: 60%;
+      border-radius: 50%;
+      box-shadow: -10px 10px 100px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    #imageself:hover {
+      box-shadow: -10px 10px 200px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+    }
+
+    .aboutmy {
+      margin-top: 100px;
+      margin-left: 15%;
+    }
+
+    #aboutmy, #projects, #contact {
+      background-color: transparent;
+      width: 80%;
+      height: 40%;
+      color: white;
+      padding: 2px;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: -10px 10px 100px;
+    }
+
+    @media (max-width: 768px) {
+      .aboutmy {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+      .navbar {
+        flex-direction: column;
+      }
+    }
+
+    .card {
+      background-color: #1d2b3a;
+      border: none;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-30px);
+    }
+
+    .card-img-top {
+      border-radius: 10px 10px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #b0b0b0;
+    }
+
+    .card-body .btn-warning {
+      background-color: #ffd400;
+      color: black;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .card-body .btn-warning:hover {
+      background-color: #ffba08;
+    }
+
+  </style>
+
+  <script>
+    function showSection(section) {
+      const sections = document.querySelectorAll('.aboutmy, .contact, .projects');
+      sections.forEach(function (sec) {
+        sec.style.display = 'none'; // Hide all sections
+      });
+      document.getElementById(section).style.display = 'block'; // Show selected section
+    }
+  </script>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="left text-warning">
+        Sukhdev Rajput
+      </div>
+      <div class="right">
+        <ul>
+          <li><button class="btn btn-warning" onclick="showSection('about')">Home</button></li>
+          <li><button class="btn btn-warning" onclick="showSection('contact')">Contact</button></li>
+          <li><button class="btn btn-warning" onclick="showSection('projects')">Projects</button></li>
+          <li><button class="btn btn-warning" onclick="showSection('aboutmy')">About</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div id="about" class="col-md-12 col-sm-12 col-lg-12 my-5 about aboutmy" style="display: block;">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 col-lg-6 py-5">
+          <p class="text-warning">Hii!</p>
+          <span>I'm </span>
+          <span id="name">Sukhdev <br>Rajput</span>
+          <h5 class="my-5">I am currently an MCA student at MAISM college, Jaipur</h5>
+          <a href="idcardimg.html">
+            <button id="RESUME" class="btn btn-warning">
+              Resume
+            </button>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6">
+          <img id="imageself" src="./image/imgport.jpg" alt="Sukhdev Rajput, an MCA student at MAISM College, Jaipur" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col-md-8 col-lg-8 col-sm-12 mx-auto aboutmy" id="aboutmy">
+      <h4>Intro-</h4>
+      <p> "Hello, my name is Sukhdev Singh, and I am currently a
+        MCA student at Maharishi Arvind Institute of Science & Management - [MAISM], Jaipur.
+        I am always looking for ways to learn and grow in my field."
+      </p>
+      <p> I believe in creating clean, user-friendly websites, designing with purpose.
+        I believe in continuous learning and pushing myself to stay on top of the latest trends and technologies.
+        When I'm not coding, you can find me at my village[Sujdola].</p>
+      <p> Take a look at my work, and if you think we’d be a good fit for your project, feel free to reach out!</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="col-md-6 col-lg-6 col-sm-6 mx-auto projects aboutmy" id="projects" style="display: none;">
+      <section id="projects">
+        <div class="container my-5">
+          <h2 class="text-warning text-center mb-5">My HTML CSS Projects</h2>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-4">
+                <img src="./imagescard/wdl_shoe_banner.webp" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Project 1</h5>
+                  <p class="card-text">A brief description of your first project. Explain what the project is about, the technologies used, and its purpose.</p>
+                  <a href="woodland.html" class="btn btn-warning" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-4">
+                <img src="./idimage/idicon.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Project 2</h5>
+                  <p class="card-text">A brief description of your second project. You can showcase another project with details here.</p>
+                  <a href="Idcardapp.html" class="btn btn-warning" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-4">
+                <img src="./image/hero_banner_2.webp" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Project 3</h5>
+                  <p class="card-text">A brief description of your third project. You can explain what you built here.</p>
+                  <a href="index.html" class="btn btn-warning" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section>
+    <div class="col-md-4 col-lg-4 col-sm-6 mx-auto contact aboutmy" id="contact" style="display: none;">
+      <h1>Contact Information</h1>
+      <p>My contact details will go here.</p>
+      <h2>MobNo-9145948382</h2>
+      <h2>E-mail-sukhdevsingh00133@gmail.com</h2>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

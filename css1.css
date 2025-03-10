@@ -1,0 +1,19 @@
+.boxes{
+    height: 20vh;
+    width: 50vh;
+    background-color: blue;
+    border: 1vh;
+    border-color: black;
+    border-radius: 2vh;
+    display:inline-block;
+    padding: 2vh;
+
+}
+div:hover{
+    color: black;
+       width:  50vh;
+     height:  20vh;
+      rotate: 20px;
+      margin-left: 100px;
+
+}

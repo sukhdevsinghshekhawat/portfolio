@@ -1,0 +1,39 @@
+body{
+text-align: center;
+}
+h1{
+    color: aliceblue;
+    font-size: 5vh;
+}
+.game{
+    height: 70vh;
+    width: 80vh;
+    text-align: center;
+    align-items: center;
+}
+.box{
+    height: 18vh;
+    width: 22vh;
+    background-color: blue;
+    border: 1vh;
+    border-radius: 2vh;
+    display:inline-block;
+    padding: 2vh;
+}
+/* .container {
+    position:relative;
+  }
+  
+  .top {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    padding-right: 50%;
+  }
+  
+  img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  } */

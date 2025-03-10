@@ -1,0 +1,111 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+ 
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url(./idimage/id-card-icon-H9DKXKnew.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 100px;
+  position: relative;
+}
+
+#navbar {
+  height: 100px;
+  background-color: #06d6a0;
+  position:fixed;
+  padding:50px;
+}
+
+#Idlogo {
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+  object-fit: cover;
+}
+
+#idcardlogo {
+  width: 100%;
+  height: 500px;
+}
+
+#webcontainer, #Backcontainer {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #000;
+  margin-top:200px;
+  border-radius: 10px;
+  background-color: azure;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  #webcontainer:hover {
+      background-color: #0b090a;
+      font-family: cursive, sans-serif;
+      width: 400px;
+      height: 500px;
+      color:white;
+  }
+  #Backcontainer:hover {
+      background-color: #0b090a;
+      font-family: cursive, sans-serif;
+      width: 400px;
+      height: 500px;
+      color: white;
+  }
+  #InputForm {
+      background-color: #cccccc;
+  }
+
+#InputForm, lable {
+  font-weight: bold;
+}
+
+footer {
+  width: auto;
+  height: 350px;
+  margin: 0%;
+  margin-bottom: 0%;
+  font-weight: bold;
+  background-color: #06d6a0;
+}
+
+#linling {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  padding-top: 20px;
+  margin: 0 10px;
+}
+li a {
+      text-decoration-line: none;
+      color: black;
+}
+
+a:hover {
+  color: #f7f6f3;
+}
+
+p {
+  text-align: center;
+}
+
+#imgmedi, span img {
+  border-radius: 50%;
+  height: 40px;;
+  width: 40px;
+  margin-inline: 10px;
+  object-fit:cover;
+  list-style: none;
+  display: flex;
+  justify-content:space-around;
+} 
+
